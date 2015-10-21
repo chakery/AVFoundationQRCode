@@ -15,6 +15,7 @@
 		B061AE031BD790BC00C0C061 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B061AE011BD790BC00C0C061 /* LaunchScreen.xib */; };
 		B061AE0F1BD790BC00C0C061 /* AVFoundationQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B061AE0E1BD790BC00C0C061 /* AVFoundationQRCodeTests.m */; };
 		B061AE1B1BD791E500C0C061 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B061AE1A1BD791E500C0C061 /* QRCodeViewController.m */; };
+		B061AE1D1BD7B0EA00C0C061 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B061AE1C1BD7B0EA00C0C061 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B061AE0E1BD790BC00C0C061 /* AVFoundationQRCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundationQRCodeTests.m; sourceTree = "<group>"; };
 		B061AE191BD791E500C0C061 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		B061AE1A1BD791E500C0C061 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		B061AE1C1BD7B0EA00C0C061 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				B061AE191BD791E500C0C061 /* QRCodeViewController.h */,
 				B061AE1A1BD791E500C0C061 /* QRCodeViewController.m */,
+				B061AE1C1BD7B0EA00C0C061 /* README.md */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B061AE1D1BD7B0EA00C0C061 /* README.md in Resources */,
 				B061ADFE1BD790BC00C0C061 /* Main.storyboard in Resources */,
 				B061AE031BD790BC00C0C061 /* LaunchScreen.xib in Resources */,
 				B061AE001BD790BC00C0C061 /* Images.xcassets in Resources */,
