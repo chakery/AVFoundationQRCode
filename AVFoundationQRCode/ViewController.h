@@ -2,7 +2,7 @@
 //  ViewController.h
 //  AVFoundationQRCode
 //
-//  Created by qf on 15/10/21.
+//  Created by Chakery on 15/10/21.
 //  Copyright (c) 2015年 Chakery. All rights reserved.
 //
 

@@ -14,6 +14,7 @@
 		B061AE001BD790BC00C0C061 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B061ADFF1BD790BC00C0C061 /* Images.xcassets */; };
 		B061AE031BD790BC00C0C061 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B061AE011BD790BC00C0C061 /* LaunchScreen.xib */; };
 		B061AE0F1BD790BC00C0C061 /* AVFoundationQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B061AE0E1BD790BC00C0C061 /* AVFoundationQRCodeTests.m */; };
+		B061AE1B1BD791E500C0C061 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B061AE1A1BD791E500C0C061 /* QRCodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B061AE081BD790BC00C0C061 /* AVFoundationQRCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVFoundationQRCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B061AE0D1BD790BC00C0C061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B061AE0E1BD790BC00C0C061 /* AVFoundationQRCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundationQRCodeTests.m; sourceTree = "<group>"; };
+		B061AE191BD791E500C0C061 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		B061AE1A1BD791E500C0C061 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		B061ADE61BD790BC00C0C061 = {
 			isa = PBXGroup;
 			children = (
+				B061AE181BD7916200C0C061 /* QRCode */,
 				B061ADF11BD790BC00C0C061 /* AVFoundationQRCode */,
 				B061AE0B1BD790BC00C0C061 /* AVFoundationQRCodeTests */,
 				B061ADF01BD790BC00C0C061 /* Products */,
@@ -117,6 +121,15 @@
 				B061AE0D1BD790BC00C0C061 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B061AE181BD7916200C0C061 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				B061AE191BD791E500C0C061 /* QRCodeViewController.h */,
+				B061AE1A1BD791E500C0C061 /* QRCodeViewController.m */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				B061ADFB1BD790BC00C0C061 /* ViewController.m in Sources */,
 				B061ADF81BD790BC00C0C061 /* AppDelegate.m in Sources */,
+				B061AE1B1BD791E500C0C061 /* QRCodeViewController.m in Sources */,
 				B061ADF51BD790BC00C0C061 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +294,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -323,6 +338,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -347,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				INFOPLIST_FILE = AVFoundationQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				INFOPLIST_FILE = AVFoundationQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
