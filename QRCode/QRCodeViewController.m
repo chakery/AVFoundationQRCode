@@ -110,6 +110,8 @@
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
         stringValue = metadataObject.stringValue;
     }
+    // 停止横线
+    [_timer invalidate];
     
     // 返回结果
     [_delegate QRCodeResult:stringValue];
