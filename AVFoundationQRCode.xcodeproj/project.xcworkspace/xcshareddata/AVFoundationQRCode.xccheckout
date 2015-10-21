@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EFD70154-CDAB-4832-ABD2-9F35ED9022F3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>AVFoundationQRCode</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>66795C627A1CBF0535A791FF660D9BD280FC4EE6</key>
 		<string>https://github.com/Chakery/AVFoundationQRCode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AVFoundationQRCode.xcodeproj/project.xcworkspace</string>
+	<string>AVFoundationQRCode.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>66795C627A1CBF0535A791FF660D9BD280FC4EE6</key>
