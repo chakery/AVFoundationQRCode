@@ -49,7 +49,12 @@
     _device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     
     // 输入流
-    _input = [AVCaptureDeviceInput deviceInputWithDevice:self.device error:nil];
+    NSError *error;
+    _input = [AVCaptureDeviceInput deviceInputWithDevice:self.device error:&error];
+    if (error) {
+        [[[UIAlertView alloc]initWithTitle:@"警告" message:@"摄像头打开失败!" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+        return;
+    }
     
     // 输出流
     _output = [[AVCaptureMetadataOutput alloc]init];
@@ -118,6 +123,8 @@
  *  设置ui
  */
 -(void)setUI {
+    self.view.backgroundColor = [UIColor blackColor];
+    
     // 边框
     _borderView = [[UIView alloc]init];
     _borderView.frame = CGRectMake((WIDTH - 300)/2, 100, 300, 300);
